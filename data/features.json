@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Heat Sinks",
+    "description": "Aluminum extrusion, skived fin, bonded fin, and stamped fin heatsinks for power electronics, LED lighting, and industrial applications.",
+    "image": "/images/features/heatsink.svg"
+  },
+  {
+    "title": "Heat Pipes & Vapor Chambers",
+    "description": "Two-phase heat transfer solutions including standard heat pipes, ultra-thin vapor chambers, and loop heat pipe configurations.",
+    "image": "/images/features/heatpipe.svg"
+  },
+  {
+    "title": "Liquid Cooling Solutions",
+    "description": "Advanced cold plates and liquid cooling systems for high-power applications exceeding 500W, including tube cold plates and liquid cold plates.",
+    "image": "/images/features/liquid-cooling.svg"
+  },
+  {
+    "title": "Thermal Interface Materials",
+    "description": "Thermal pads, gap fillers, greases, and phase-change materials for optimal thermal contact between components and heatsinks.",
+    "image": "/images/features/tim.svg"
+  },
+  {
+    "title": "Custom Assemblies",
+    "description": "Fully integrated thermal modules combining heatsinks, heat pipes, and fans — designed and manufactured to your exact specifications.",
+    "image": "/images/features/custom-assembly.svg"
+  },
+  {
+    "title": "Active Cooling Systems",
+    "description": "Fan-heatsink assemblies and forced-air cooling solutions for high-density electronics, telecom equipment, and data center applications.",
+    "image": "/images/features/active-cooling.svg"
+  }
+]

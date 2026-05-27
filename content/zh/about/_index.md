@@ -63,13 +63,40 @@ ThermalPro 是热管理解决方案的领先制造商，专注于定制散热片
 
 ## 质量认证
 
-{{< certification name="ISO9001:2015" description="设计、制造和服务流程通过质量管理体系认证。" >}}
-
-{{< certification name="RoHS" description="所有产品符合有害物质限制使用指令。" >}}
-
-{{< certification name="REACH" description="完全符合欧盟REACH化学品管理法规。" >}}
-
-{{< certification name="UL认证" description="部分产品系列已通过UL安全合规认证。" >}}
+<div class="row justify-content-start">
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">ISO9001:2015</h5>
+        <p class="card-text">设计、制造和服务流程通过质量管理体系认证。</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">RoHS</h5>
+        <p class="card-text">所有产品符合有害物质限制使用指令。</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">REACH</h5>
+        <p class="card-text">完全符合欧盟REACH化学品管理法规。</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">UL认证</h5>
+        <p class="card-text">部分产品系列已通过UL安全合规认证。</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 

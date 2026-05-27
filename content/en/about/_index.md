@@ -63,13 +63,40 @@ With export experience to over 30 countries, we understand international quality
 
 ## Quality Certifications
 
-{{< certification name="ISO9001:2015" description="Certified quality management system for design, manufacturing, and service processes." >}}
-
-{{< certification name="RoHS" description="All products comply with the Restriction of Hazardous Substances Directive." >}}
-
-{{< certification name="REACH" description="Full compliance with EU REACH regulation for chemical substance management." >}}
-
-{{< certification name="UL Recognition" description="Selected product series are UL recognized for safety compliance." >}}
+<div class="row justify-content-start">
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">ISO9001:2015</h5>
+        <p class="card-text">Certified quality management system for design, manufacturing, and service processes.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">RoHS</h5>
+        <p class="card-text">All products comply with the Restriction of Hazardous Substances Directive.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">REACH</h5>
+        <p class="card-text">Full compliance with EU REACH regulation for chemical substance management.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-3 mb-3">
+    <div class="card">
+      <div class="card-body text-center">
+        <h5 class="card-title">UL Recognition</h5>
+        <p class="card-text">Selected product series are UL recognized for safety compliance.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
