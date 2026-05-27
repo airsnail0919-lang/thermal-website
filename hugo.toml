@@ -1,0 +1,60 @@
+baseURL = '/'
+languageCode = 'zh-CN, en-US'
+defaultContentLanguage = 'en'
+title = 'ThermalPro - Advanced Thermal Management Solutions'
+theme = 'hugo-serif-theme'
+
+[params]
+  description = 'Professional thermal management solutions for industrial applications'
+  author = 'ThermalPro'
+  email = 'info@thermalpro.com'
+  phone = '+86-XXX-XXXX-XXXX'
+  address = 'Shenzhen, China'
+  copyright = '© 2025 ThermalPro. All rights reserved.'
+
+[params.social]
+  linkedin = '#'
+  facebook = '#'
+  twitter = '#'
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+  [[menu.main]]
+    identifier = 'products'
+    name = 'Products'
+    url = '/products/'
+    weight = 2
+  [[menu.main]]
+    identifier = 'services'
+    name = 'Custom Services'
+    url = '/services/'
+    weight = 3
+  [[menu.main]]
+    identifier = 'applications'
+    name = 'Applications'
+    url = '/applications/'
+    weight = 4
+  [[menu.main]]
+    identifier = 'about'
+    name = 'About Us'
+    url = '/about/'
+    weight = 5
+  [[menu.main]]
+    identifier = 'contact'
+    name = 'Contact'
+    url = '/contact/'
+    weight = 6
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    contentDir = 'content/en'
+    weight = 1
+  [languages.zh]
+    languageName = '中文'
+    contentDir = 'content/zh'
+    weight = 2
