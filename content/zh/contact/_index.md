@@ -12,7 +12,17 @@ type: contact
 
 ## 给我们留言
 
-<form action="/zh/contact/" method="POST" class="contact-form">
+<form action="https://api.staticforms.dev/submit" method="POST" class="contact-form">
+
+  <!-- StaticForms API Key — REPLACE with your actual key from https://staticforms.dev/register -->
+  <input type="hidden" name="accessKey" value="YOUR_STATICFORMS_ACCESS_KEY_HERE">
+
+  <!-- Anti-spam honeypot (hidden from users) -->
+  <input type="text" name="honeypot" style="display:none">
+
+  <!-- Redirect after success -->
+  <input type="hidden" name="redirectTo" value="https://airsnail0919-lang.github.io/thermal-website/zh/contact/thank-you/">
+
   <div class="form-group">
     <label for="name">姓名 *</label>
     <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
@@ -34,15 +44,15 @@ type: contact
   </div>
 
   <div class="form-group">
-    <label for="subject">主题 *</label>
-    <select id="subject" name="subject" required>
+    <label for="$subject">主题 *</label>
+    <select id="$subject" name="$subject" required>
       <option value="">请选择主题</option>
-      <option value="product-inquiry">产品咨询</option>
-      <option value="custom-design">定制设计需求</option>
-      <option value="quote">索取报价</option>
-      <option value="technical-support">技术支持</option>
-      <option value="partnership">合作机会</option>
-      <option value="other">其他</option>
+      <option value="产品咨询">产品咨询</option>
+      <option value="定制设计需求">定制设计需求</option>
+      <option value="索取报价">索取报价</option>
+      <option value="技术支持">技术支持</option>
+      <option value="合作机会">合作机会</option>
+      <option value="其他">其他</option>
     </select>
   </div>
 

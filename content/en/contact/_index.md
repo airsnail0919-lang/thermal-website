@@ -12,7 +12,17 @@ Have a thermal challenge? Our engineering team is ready to help. Whether you nee
 
 ## Send Us a Message
 
-<form action="/contact/" method="POST" class="contact-form">
+<form action="https://api.staticforms.dev/submit" method="POST" class="contact-form">
+
+  <!-- StaticForms API Key — REPLACE with your actual key from https://staticforms.dev/register -->
+  <input type="hidden" name="accessKey" value="YOUR_STATICFORMS_ACCESS_KEY_HERE">
+
+  <!-- Anti-spam honeypot (hidden from users) -->
+  <input type="text" name="honeypot" style="display:none">
+
+  <!-- Redirect after success -->
+  <input type="hidden" name="redirectTo" value="https://airsnail0919-lang.github.io/thermal-website/contact/thank-you/">
+
   <div class="form-group">
     <label for="name">Full Name *</label>
     <input type="text" id="name" name="name" required placeholder="Your full name">
@@ -34,15 +44,15 @@ Have a thermal challenge? Our engineering team is ready to help. Whether you nee
   </div>
 
   <div class="form-group">
-    <label for="subject">Subject *</label>
-    <select id="subject" name="subject" required>
+    <label for="$subject">Subject *</label>
+    <select id="$subject" name="$subject" required>
       <option value="">Select a topic</option>
-      <option value="product-inquiry">Product Inquiry</option>
-      <option value="custom-design">Custom Design Request</option>
-      <option value="quote">Request a Quote</option>
-      <option value="technical-support">Technical Support</option>
-      <option value="partnership">Partnership Opportunity</option>
-      <option value="other">Other</option>
+      <option value="Product Inquiry">Product Inquiry</option>
+      <option value="Custom Design Request">Custom Design Request</option>
+      <option value="Request a Quote">Request a Quote</option>
+      <option value="Technical Support">Technical Support</option>
+      <option value="Partnership Opportunity">Partnership Opportunity</option>
+      <option value="Other">Other</option>
     </select>
   </div>
 
@@ -53,6 +63,24 @@ Have a thermal challenge? Our engineering team is ready to help. Whether you nee
 
   <button type="submit" class="btn btn-primary">Send Message</button>
 </form>
+
+<style>
+.contact-form input:not([type=hidden]):focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #f24088;
+  box-shadow: 0 0 0 0.2rem rgba(242,64,136,0.25);
+  outline: none;
+}
+.contact-form .btn-primary {
+  background-color: #f24088;
+  border-color: #f24088;
+}
+.contact-form .btn-primary:hover {
+  background-color: #d82e72;
+  border-color: #d82e72;
+}
+</style>
 
 ---
 
