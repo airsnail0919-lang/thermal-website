@@ -1,0 +1,105 @@
+<form action="https://api.staticforms.dev/submit" method="POST" class="contact-form">
+
+  <!-- StaticForms API Key — REPLACE with your actual key from https://staticforms.dev/register -->
+  <input type="hidden" name="accessKey" value="YOUR_STATICFORMS_ACCESS_KEY_HERE">
+
+  <!-- Anti-spam honeypot (hidden from users) -->
+  <input type="text" name="honeypot" style="display:none">
+
+  {{- $lang := .Get "lang" | default "en" -}}
+  {{- if eq $lang "zh" -}}
+  <!-- Redirect after success -->
+  <input type="hidden" name="redirectTo" value="https://airsnail0919-lang.github.io/thermal-website/zh/contact/thank-you/">
+
+  <div class="form-group">
+    <label for="name">姓名 *</label>
+    <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+  </div>
+  <div class="form-group">
+    <label for="email">邮箱地址 *</label>
+    <input type="email" id="email" name="email" required placeholder="your@email.com">
+  </div>
+  <div class="form-group">
+    <label for="company">公司名称</label>
+    <input type="text" id="company" name="company" placeholder="某某科技有限公司">
+  </div>
+  <div class="form-group">
+    <label for="phone">联系电话</label>
+    <input type="tel" id="phone" name="phone" placeholder="+86-XXX-XXXX-XXXX">
+  </div>
+  <div class="form-group">
+    <label for="$subject">主题 *</label>
+    <select id="$subject" name="$subject" required>
+      <option value="">请选择主题</option>
+      <option value="产品咨询">产品咨询</option>
+      <option value="定制设计需求">定制设计需求</option>
+      <option value="索取报价">索取报价</option>
+      <option value="技术支持">技术支持</option>
+      <option value="合作机会">合作机会</option>
+      <option value="其他">其他</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="message">留言内容 *</label>
+    <textarea id="message" name="message" rows="6" required placeholder="请描述您的热需求、应用场景、目标规格和预估数量……"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">发送留言</button>
+
+  {{- else -}}
+
+  <!-- Redirect after success -->
+  <input type="hidden" name="redirectTo" value="https://airsnail0919-lang.github.io/thermal-website/contact/thank-you/">
+
+  <div class="form-group">
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required placeholder="Your full name">
+  </div>
+  <div class="form-group">
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="email" required placeholder="your@email.com">
+  </div>
+  <div class="form-group">
+    <label for="company">Company Name</label>
+    <input type="text" id="company" name="company" placeholder="Company Ltd.">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+86-XXX-XXXX-XXXX">
+  </div>
+  <div class="form-group">
+    <label for="$subject">Subject *</label>
+    <select id="$subject" name="$subject" required>
+      <option value="">Select a topic</option>
+      <option value="Product Inquiry">Product Inquiry</option>
+      <option value="Custom Design Request">Custom Design Request</option>
+      <option value="Request a Quote">Request a Quote</option>
+      <option value="Technical Support">Technical Support</option>
+      <option value="Partnership Opportunity">Partnership Opportunity</option>
+      <option value="Other">Other</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="message">Message *</label>
+    <textarea id="message" name="message" rows="6" required placeholder="Describe your thermal requirements, application, target specifications, and estimated volume..."></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+  {{- end -}}
+</form>
+
+<style>
+.contact-form input:not([type=hidden]):focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #f24088;
+  box-shadow: 0 0 0 0.2rem rgba(242,64,136,0.25);
+  outline: none;
+}
+.contact-form .btn-primary {
+  background-color: #f24088;
+  border-color: #f24088;
+}
+.contact-form .btn-primary:hover {
+  background-color: #d82e72;
+  border-color: #d82e72;
+}
+</style>
