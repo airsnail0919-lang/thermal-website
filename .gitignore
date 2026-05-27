@@ -9,6 +9,3 @@ Thumbs.db
 # IDE
 .idea/
 .vscode/
-
-# Theme (git clone, not submodule)
-themes/
